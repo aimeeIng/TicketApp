@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "46899361583",
+    "project_id": "ocr-tickectapp",
+    "storage_bucket": "ocr-tickectapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46899361583:android:ba5f8d60b9ee5edd9c93da",
+        "android_client_info": {
+          "package_name": "com.tab.ticketapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf2jLs0gL1vfGJVCUJU4uKSJLGwdWsFUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

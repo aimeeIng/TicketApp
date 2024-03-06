@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
     SurfaceView mCameraView;
     TextRecognizer textRecognizer;
-    TextView mTextView, nozzle_tv, site_tv, price_tv, plate_result;
+    TextView mTextView, plate_result;
     ImageView save;
     CameraSource mCameraSource;
-    private static final String TAG = "CarscanActivity";
+    private static final String TAG = "MainActivity";
 
     private ImageButton next_to_card;
     public TextView validText, nbrText, lastText;
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
 //                            validPlate(mTextView.getText().toString());
                             result = mTextView.getText().toString().trim();
 
-                            if (result.length() == 9){
+                            if (result.length() == 12){
                                 plate_result.setText(result);
 
                                 String str = plate_result.getText().toString();
@@ -140,15 +140,6 @@ public class MainActivity extends AppCompatActivity {
                                 StringBuffer special = new StringBuffer();
                                 StringBuffer lst = new StringBuffer();
 
-//     for (int i=0; i<str.length(); i++)
-//     {
-//         if (Character.isDigit(str.charAt(i)))
-//             num.append(str.charAt(i));
-//         else if(Character.isAlphabetic(str.charAt(i)))
-//             alpha.append(str.charAt(i));
-//         else
-//             special.append(str.charAt(i));
-//     }
 
                                 if (Character.isAlphabetic(str.charAt(0)) || Character.isAlphabetic(str.charAt(1)) || Character.isAlphabetic(str.charAt(2))) {
                                     for (int i = 0; i < 3; i++) {
@@ -278,7 +269,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void validPlate() {
 //        splitString(str);
-        String xx = validText.getText().toString().trim()+ nbrText.getText().toString().trim()+ lastText.getText().toString().trim();
+        String xx = validText.getText().toString().trim()+ nbrText.getText().toString().trim();
 
         if (!xx.isEmpty()) {
 
